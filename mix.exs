@@ -40,6 +40,7 @@ defmodule Gotcha.MixProject do
       {:ecto_sql, "~> 3.1"},
       {:ex_machina, "~> 2.3", only: :test},
       {:faker, "~> 0.13", only: :test},
+      {:geocalc, "~> 0.5"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},

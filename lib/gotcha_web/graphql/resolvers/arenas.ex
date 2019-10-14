@@ -1,5 +1,7 @@
 defmodule GotchaWeb.GraphQL.Resolvers.Arenas do
-  def nearby(parent, args, resolution) do
-    IO.puts("I AM HERE!")
+  alias Gotcha.Arena
+
+  def nearby(_parent, %{latitude: latitude, longitude: longitude, radius: radius}, _resolution) do
+    {:ok, Arena.near(latitude, longitude, radius)}
   end
 end

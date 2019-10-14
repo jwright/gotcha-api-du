@@ -38,14 +38,14 @@ defmodule GotchaWeb.GraphQL.Requests.NearbyArenasTest do
 
       assert json_response(conn, 200) == %{
                "data" => %{
-                 "arenas" => {
+                 "arenas" => [
                    %{
                      "location_name" => "New York Stock Exchange"
                    },
                    %{
                      "location_name" => "One World Trade Center"
                    }
-                 }
+                 ]
                }
              }
     end
