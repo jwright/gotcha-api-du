@@ -15,6 +15,20 @@ defmodule GotchaWeb.GraphQL.Requests.NearbyArenasTest do
 
       conn = build_conn() |> put_graphql_headers
 
+      insert(:arena,
+        location_name: "New York Stock Exchange",
+        latitude: 40.706877,
+        longitude: -74.011265
+      )
+
+      insert(:arena,
+        location_name: "One World Trade Center",
+        latitude: 40.712742,
+        longitude: -74.013382
+      )
+
+      insert(:arena, location_name: "Eiffel Tower", latitude: 48.858093, longitude: 2.294694)
+
       [conn: conn, query: query]
     end
 
