@@ -38,6 +38,8 @@ defmodule Gotcha.MixProject do
       {:phoenix_pubsub, "~> 1.1"},
       {:phoenix_ecto, "~> 4.0"},
       {:ecto_sql, "~> 3.1"},
+      {:ex_machina, "~> 2.3", only: :test},
+      {:faker, "~> 0.13", only: :test},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},

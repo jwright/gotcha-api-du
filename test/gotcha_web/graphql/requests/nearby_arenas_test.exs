@@ -1,6 +1,7 @@
 defmodule GotchaWeb.GraphQL.Requests.NearbyArenasTest do
   use GotchaWeb.ConnCase, async: true
 
+  import Gotcha.Factory
   import GotchaWeb.GraphQLHelpers
 
   describe "with a valid query" do
